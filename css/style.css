@@ -1,0 +1,220 @@
+/* Page-wide styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header - contains High Score link and timer */
+
+header {
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* high score link */
+
+header div {
+    color: white;
+    text-decoration: none;
+}
+
+header div#hs:hover {
+    color: darkred;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* Timer */
+
+header #time {
+    font-weight: bold;
+    color: white;
+}
+
+/* Main container to display start, question, end of quiz, and high score divs */
+
+main .container {
+    width: 500px;
+    margin: 0 auto;
+
+}
+
+@media screen and (max-width: 768px) {
+    main .container {
+        width: 300px;
+    }
+}
+
+main .container h1 {
+    font-size: 1.5rem;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/* Start screen div */
+
+main .container .start-div {
+    display: block;
+}
+
+main .container .start-div p {
+    padding-bottom: 20px;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+main div.start-btn {
+    display: flex;
+    justify-content: center;
+}
+
+main div.start-btn button {
+    background-color: gray;
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 2px solid darkred;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+main div.start-btn button:hover {
+    background-color: #333333;
+    color: white;
+}
+
+/* Question screen div */
+
+main .container .question-div {
+    display: none;
+}
+
+main .container .question-div .buttons {
+    margin-bottom: 10px;
+}
+
+main .container .question-div .buttons button {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    background-color: lightgray;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid darkred;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+main .container .question-div .buttons button:hover {
+    background-color: #333333;
+    color: white;
+}
+
+/* Answer right/wrong message */
+
+main .container .question-div #right-wrong {
+    display: none;
+    transition: 0.3s;
+}
+
+main .container .question-div .right {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: lightgreen;
+    font-weight: bold;
+    font-style: italic;
+}
+
+main .container .question-div .wrong {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(240, 128, 128);
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* End of quiz screen div */
+
+main .container .end-div {
+    display: none;
+}
+
+main .container .end-div h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+main .container .end-div form {
+    text-align: center;
+}
+
+main .container .end-div form input {
+    font-size: 1.2rem;
+}
+
+main .container .end-div label {
+    display: block;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+main .container .end-div button {
+    background-color: gray;
+    font-size: 1.2rem;
+    padding: 2px 5px 2px 5px;
+    border: 2px solid darkred;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+main .container .end-div button:hover {
+    background-color: gray;
+}
+
+/* High Scores screen div */
+
+main .container .high-scores {
+    display: none;
+}
+
+main .container .high-scores ol li {
+    padding: 10px 10px 10px 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+main .container .high-scores ol li:nth-child(odd) {
+    background-color: gray;
+}
+
+main .container .high-scores ol li:nth-child(even) {
+    background-color: lightgray;
+}
+
+main .container .high-scores div#hs-btns {
+    margin-top: 20px;
+    
+    
+}
+
+main .container .high-scores div#hs-btns button {
+    background-color: darkgrey;
+    font-size: 1.2rem;
+    padding: 2px 5px 2px 5px;
+    border: 2px solid darkred;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+main .container .high-scores div#hs-btns button:hover {
+    background-color: #333333;
+    color: white;
+}
